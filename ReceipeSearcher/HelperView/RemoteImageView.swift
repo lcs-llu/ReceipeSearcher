@@ -13,16 +13,16 @@ struct RemoteImageView: View {
     var body: some View {
         AsyncImage(url: formURL,
                    content: { downloadImage in
-               downloadImage
+            downloadImage
                 .resizable()
                 .scaledToFit()
         },
-        
+                   
                    placeholder: {
-                   ProgressView()
-    })
+            ProgressView()
+        })
+    }
 }
-                   }
 
 struct RemoteImageView_Previews: PreviewProvider {
     static var previews: some View {
