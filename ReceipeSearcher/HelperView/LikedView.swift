@@ -12,7 +12,7 @@ struct LikedView: View {
         NavigationView{
             Text("You haven't liked any recipes to here yet")
                 .padding()
-                .navigationTitle("Liked")
+                .navigationTitle("Like")
         }
     }
 }

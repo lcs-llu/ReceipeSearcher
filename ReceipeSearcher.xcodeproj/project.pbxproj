@@ -14,7 +14,6 @@
 		3A629BB0282C13F4005A3B89 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629BAF282C13F4005A3B89 /* RemoteImageView.swift */; };
 		3A629BB4282D5F90005A3B89 /* LikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629BB3282D5F90005A3B89 /* LikedView.swift */; };
 		3A629BB8282D6124005A3B89 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629BB7282D6124005A3B89 /* HistoryView.swift */; };
-		3A629BBA282D62B1005A3B89 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629BB9282D62B1005A3B89 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 		3A629BAF282C13F4005A3B89 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		3A629BB3282D5F90005A3B89 /* LikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedView.swift; sourceTree = "<group>"; };
 		3A629BB7282D6124005A3B89 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
-		3A629BB9282D62B1005A3B89 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				3A629BAC282B3897005A3B89 /* SearchView.swift */,
-				3A629BB9282D62B1005A3B89 /* TabBar.swift */,
 				3A629BB3282D5F90005A3B89 /* LikedView.swift */,
 				3A629BB7282D6124005A3B89 /* HistoryView.swift */,
 				3A629BAF282C13F4005A3B89 /* RemoteImageView.swift */,
@@ -168,7 +165,6 @@
 				3A629BB8282D6124005A3B89 /* HistoryView.swift in Sources */,
 				3A629BAD282B3897005A3B89 /* SearchView.swift in Sources */,
 				3A629BB0282C13F4005A3B89 /* RemoteImageView.swift in Sources */,
-				3A629BBA282D62B1005A3B89 /* TabBar.swift in Sources */,
 				3A629BB4282D5F90005A3B89 /* LikedView.swift in Sources */,
 				3A629B9F282B2C18005A3B89 /* ReceipeSearcherApp.swift in Sources */,
 			);

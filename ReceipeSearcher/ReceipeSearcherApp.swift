@@ -11,7 +11,23 @@ import SwiftUI
 struct ReceipeSearcherApp: App {
     var body: some Scene {
         WindowGroup {
-            SearchView()
+            TabView {
+                
+                SearchView()
+                    .tabItem {
+                        Label("Search", systemImage: "magnifyingglass")
+                    }
+                
+                LikedView ()
+                    .tabItem {
+                        Label("Liked",systemImage: "hand.thumbsup")
+                    }
+                
+                HistoryView()
+                    .tabItem {
+                        Label("History",systemImage: "book")
+                    }
         }
     }
+}
 }
