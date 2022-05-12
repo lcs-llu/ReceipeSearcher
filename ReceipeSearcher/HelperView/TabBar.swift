@@ -13,12 +13,18 @@ struct TabBar: View {
             
             SearchView()
                 .tabItem {
-                    
+                    Label("Search", systemImage: "magnifyingglass")
                 }
             
             LikedView ()
+                .tabItem {
+                    Label("Like",systemImage: "hand.thumbsup")
+                }
             
             HistoryView()
+                .tabItem {
+                    Label("History",systemImage: "book")
+                }
         }
     }
 }
