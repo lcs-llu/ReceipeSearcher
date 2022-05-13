@@ -9,7 +9,8 @@ import SwiftUI
 
 struct LikedView: View {
     var body: some View {
-        NavigationView{
+        NavigationView {
+            
             Text("You haven't liked any recipes to here yet")
                 .padding()
                 .navigationTitle("Like")

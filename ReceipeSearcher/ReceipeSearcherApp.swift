@@ -27,7 +27,7 @@ struct ReceipeSearcherApp: App {
                     .tabItem {
                         Label("History",systemImage: "book")
                     }
+            }
         }
     }
-}
 }
