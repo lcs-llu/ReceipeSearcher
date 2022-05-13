@@ -1,5 +1,5 @@
 //
-//  ListItemView.swift
+//  DetailView.swift
 //  ReceipeSearcher
 //
 //  Created by Leo Lu on 2022-05-13.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListItemView: View {
+struct DetailView: View {
     var body: some View {
         NavigationView {
             Form {
@@ -37,8 +37,8 @@ struct ListItemView: View {
     }
 }
 
-struct ListItemView_Previews: PreviewProvider {
+struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ListItemView()
+        DetailView()
     }
 }
