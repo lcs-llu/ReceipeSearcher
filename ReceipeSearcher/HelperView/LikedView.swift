@@ -18,6 +18,7 @@ struct LikedView: View {
     }
 }
 
+
 struct LikedView_Previews: PreviewProvider {
     static var previews: some View {
         LikedView()

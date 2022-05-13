@@ -27,6 +27,9 @@ struct SearchView: View {
                     .resizable()
                     .scaledToFit()
                 
+                // List(foundRecipes, id: \.idMeal) {currentRecipe in
+                    
+                // }
     
                 .searchable(text: $searchText)
                 
