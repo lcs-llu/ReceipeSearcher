@@ -27,11 +27,18 @@ struct SearchView: View {
                     .resizable()
                     .scaledToFit()
                 
-                // List(foundRecipes, id: \.idMeal) {currentRecipe in
-                    
-                // }
+                List(foundRecipes, id: \.idMeal) {currentRecipe in
+                    NavigationLink(destination: DetailView()) {
+                        ListItemView()
+                    }
+                }
     
                 .searchable(text: $searchText)
+                .onChange(of: searchText) { whatWasTyped in
+                    Task {
+                        await fetchResults()
+                    }
+                }
                 
                 }
                 
