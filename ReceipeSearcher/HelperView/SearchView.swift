@@ -9,26 +9,31 @@ import SwiftUI
 
 struct SearchView: View {
     
+    @State private var searchText = ""
+    
     var body: some View {
         
-        
-        NavigationView{
-            
-            VStack{
-                Text("Search Recipe")
-                    .font(.title)
+        NavigationView {
+            VStack {
+                Text(" \(searchText)")
+                    .searchable(text: $searchText, prompt: "Enter")
+                    .navigationTitle("SearchRecipe")
                 
-            
+                Image("hamburger")
+                    .resizable()
+                    .scaledToFit()
+                
             }
         }
-        
-        
-        
-        
-        
-        .navigationTitle("Search recipe")
     }
+    
+    
+    
+    
+    
+    
 }
+
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
