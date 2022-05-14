@@ -18,19 +18,21 @@ struct LikedView: View {
                 
                 if liked.isEmpty {
                     
-                Spacer()
-            
-            Text("You haven't liked any recipes to here yet")
-                .padding()
-                Spacer()
+                    Spacer()
+                    
+                    Text("You haven't liked any recipes to here yet")
+                        .padding()
+                    
+                    Spacer()
                 } else {
-                    List(liked,id:\.idMeal) {currentRecipe in
+                    List(liked, id:\.idMeal) {currentRecipe in
                         NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: true, liked: $liked)) {
                             ListItemView(recipe: currentRecipe)
                         }
                     }
                 }
             }
+            .navigationTitle("Liked Recipe")
         }
     }
 }
