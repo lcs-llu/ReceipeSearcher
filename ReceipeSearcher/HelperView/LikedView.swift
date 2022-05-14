@@ -25,7 +25,9 @@ struct LikedView: View {
                 Spacer()
                 } else {
                     List(liked,id:\.idMeal) {currentRecipe in
-                        
+                        NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: true, liked: $liked)) {
+                            ListItemView(recipe: currentRecipe)
+                        }
                     }
                 }
             }

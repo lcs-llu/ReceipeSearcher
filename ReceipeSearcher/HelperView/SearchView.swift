@@ -28,8 +28,8 @@ struct SearchView: View {
                     .scaledToFit()
                 
                 List(foundRecipes, id: \.idMeal) {currentRecipe in
-                    NavigationLink(destination: DetailView()) {
-                        ListItemView()
+                    NavigationLink(destination: DetailView(recipe: <#Recipe#>, inLiked: <#Bool#>, liked: <#Binding<[Recipe]>#>)) {
+                        ListItemView(recipe: <#Recipe#>)
                     }
                 }
     
