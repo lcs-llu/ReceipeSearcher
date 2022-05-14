@@ -8,12 +8,27 @@
 import SwiftUI
 
 struct LikedView: View {
+    
+    @Binding var liked: [Recipe]
+    
     var body: some View {
         NavigationView {
             
+            VStack {
+                
+                if liked.isEmpty {
+                    
+                Spacer()
+            
             Text("You haven't liked any recipes to here yet")
                 .padding()
-                .navigationTitle("Like")
+                Spacer()
+                } else {
+                    List(liked,id:\.idMeal) {currentRecipe in
+                        
+                    }
+                }
+            }
         }
     }
 }
@@ -21,6 +36,6 @@ struct LikedView: View {
 
 struct LikedView_Previews: PreviewProvider {
     static var previews: some View {
-        LikedView()
+        LikedView(liked: .constant([testMeal]))
     }
 }

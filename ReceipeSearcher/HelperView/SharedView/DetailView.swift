@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    var recipe: Recipe
+    
+    @State var inLiked: Bool
+    
+    @Binding var liked: [Recipe]
+    
     var body: some View {
         NavigationView {
             Form {
@@ -39,6 +46,8 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(recipe: testMeal,
+                   inLiked: false,
+                   liked: .constant([]))
     }
 }
