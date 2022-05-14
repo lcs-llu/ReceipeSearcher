@@ -19,29 +19,34 @@ struct SearchView: View {
         
         NavigationView {
             
-            VStack {
-                
-                
-                Text("\(searchText)")
-                
-                
-                Image("hamburger")
-                    .resizable()
-                    .scaledToFit()
-                
-                List(foundRecipes, id: \.idMeal) {currentRecipe in
-                    NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: false, liked: $liked)) {
-                        ListItemView(recipe: currentRecipe)
+            ZStack {
+                VStack {
+                    
+                    List(foundRecipes, id: \.idMeal) {currentRecipe in
+                        NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: false, liked: $liked)) {
+                            ListItemView(recipe: currentRecipe)
+                        }
+                    }
+                    .searchable(text: $searchText)
+                    .onChange(of: searchText) { whatWasTyped in
+                        Task {
+                            await fetchResults()
+                        }
                     }
                 }
+                .navigationTitle("Recipe Searcher")
                 
-                .searchable(text: $searchText)
-                .onChange(of: searchText) { whatWasTyped in
-                    Task {
-                        await fetchResults()
-                    }
+                VStack {
+                    Spacer()
+                    
+                    Image("hamburger")
+                        .resizable()
+                        .scaledToFit()
+                    
+                    Spacer()
+                    
                 }
-                
+                .opacity(searchText.isEmpty ? 1.0 : 0.0)
             }
             
         }
