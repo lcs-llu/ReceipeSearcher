@@ -13,14 +13,13 @@ struct ListItemView: View {
     
     var body: some View {
         HStack() {
-            Image("pizza")
-                .resizable()
+            RemoteImageView(fromURL: URL(string: recipe.strMealThumb!)!)
                 .frame(width: 50, height: 50, alignment: .center)
                 .clipped()
             VStack(alignment: .leading) {
-                Text("Pizza")
+                Text(recipe.strMeal)
                     .bold()
-                Text("Italian")
+                Text(recipe.strArea!)
                     .font(.caption)
             }
         }
