@@ -12,7 +12,10 @@ struct RemoteImageView: View {
     var body: some View {
         AsyncImage(url: fromURL,
                    content: { downloadedImage in
-            downloadedImage},
+            downloadedImage
+                .resizable()
+                .scaledToFit()
+        },
                    placeholder: {
                 ProgressView()
             })

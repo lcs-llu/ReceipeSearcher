@@ -20,21 +20,30 @@ struct DetailView: View {
             Form {
                 Section(content: {
                     VStack {
-                        Image("pizza")
-                            .resizable()
-                            .scaledToFit()
+                        RemoteImageView(fromURL: URL(string: recipe.strMealThumb)!)
                         Image(systemName: "heart.circle")
                             .resizable()
                             .frame(width: 40, height: 40)
                     }
                 })
                 Section(content: {
-                    Text("Instructions placeholder text")
+                    Text(recipe.strInstructions)
                 }, header: {
                     Text("Instructions")
                 })
                 Section(content: {
-                    Text("Ingredients placeholder text")
+                    List {
+                        Text(recipe.strIngredient1)
+                        Text(recipe.strIngredient2)
+                        Text(recipe.strIngredient3)
+                        Text(recipe.strIngredient4)
+                        Text(recipe.strIngredient5)
+                        Text(recipe.strIngredient6)
+                        Text(recipe.strIngredient7)
+                        Text(recipe.strIngredient8)
+                        Text(recipe.strIngredient9)
+                        Text(recipe.strIngredient10)
+                    }
                 }, header: {
                     Text("Ingredients")
                 })
