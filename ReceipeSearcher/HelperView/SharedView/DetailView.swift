@@ -21,9 +21,7 @@ struct DetailView: View {
                 Section(content: {
                     VStack {
                         RemoteImageView(fromURL: URL(string: recipe.strMealThumb)!)
-                        Image(systemName: "heart.circle")
-                            .resizable()
-                            .frame(width: 40, height: 40)
+                        LikedButtonView(recipe: recipe, inLiked: $inLiked, liked: $liked)
                     }
                 })
                 Section(content: {
