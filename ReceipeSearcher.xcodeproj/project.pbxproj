@@ -15,6 +15,7 @@
 		3A629BB8282D6124005A3B89 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629BB7282D6124005A3B89 /* HistoryView.swift */; };
 		3A629BC0282D6AC7005A3B89 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629BBF282D6AC7005A3B89 /* RecipeModel.swift */; };
 		3A7315A2282F000500968578 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7315A1282F000500968578 /* DetailView.swift */; };
+		3A7315A5283054E000968578 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7315A4283054E000968578 /* RemoteImageView.swift */; };
 		3AF9D603282ECFF400D3553C /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF9D602282ECFF400D3553C /* ListItemView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		3A629BB7282D6124005A3B89 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		3A629BBF282D6AC7005A3B89 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		3A7315A1282F000500968578 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3A7315A4283054E000968578 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
 		3AF9D602282ECFF400D3553C /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			children = (
 				3AF9D602282ECFF400D3553C /* ListItemView.swift */,
 				3A7315A1282F000500968578 /* DetailView.swift */,
+				3A7315A4283054E000968578 /* RemoteImageView.swift */,
 			);
 			path = SharedView;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				3AF9D603282ECFF400D3553C /* ListItemView.swift in Sources */,
 				3A7315A2282F000500968578 /* DetailView.swift in Sources */,
+				3A7315A5283054E000968578 /* RemoteImageView.swift in Sources */,
 				3A629BB8282D6124005A3B89 /* HistoryView.swift in Sources */,
 				3A629BAD282B3897005A3B89 /* SearchView.swift in Sources */,
 				3A629BB4282D5F90005A3B89 /* LikedView.swift in Sources */,
