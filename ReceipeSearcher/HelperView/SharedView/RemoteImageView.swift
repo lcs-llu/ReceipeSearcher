@@ -23,7 +23,7 @@ struct RemoteImageView: View {
 }
 
 struct RemoteImageView_Previews: PreviewProvider {
-    static let example = URL(string: testMeal.strMealThumb!)!
+    static let example = URL(string: testMeal.strMealThumb)!
     static var previews: some View {
         RemoteImageView(fromURL: example)
     }

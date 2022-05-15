@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct ReceipeSearcherApp: App {
+    
     @State var liked: [Recipe] = []
+    
     var body: some Scene {
         WindowGroup {
             TabView {

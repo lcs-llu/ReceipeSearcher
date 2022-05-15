@@ -22,7 +22,7 @@ struct SearchView: View {
             ZStack {
                 VStack {
                     
-                    List(foundRecipes, id: \.idMeal) {currentRecipe in
+                    List(foundRecipes, id: \.idMeal) { currentRecipe in
                         NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: false, liked: $liked)) {
                             ListItemView(recipe: currentRecipe)
                         }
@@ -60,7 +60,7 @@ struct SearchView: View {
         let input = searchText.lowercased().replacingOccurrences(of: " ", with: "+")
         
         
-        let url = URL(string: "www.themealdb.com/api/json/v1/1/search.php?s")!
+        let url = URL(string: "www.themealdb.com/api/json/v1/1/search.php?s=\(input)")!
         
         
         var request = URLRequest(url: url)
