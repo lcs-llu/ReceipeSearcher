@@ -60,9 +60,9 @@ struct SearchView: View {
         let input = searchText.lowercased().replacingOccurrences(of: " ", with: "+")
         
         
-        let url = URL(string: "www.themealdb.com/api/json/v1/1/search.php?s=\(input)")!
+        let url = URL(string: "https://www.themealdb.com/api/json/v1/1/search.php?s=\(input)")!
         
-        
+
         var request = URLRequest(url: url)
         request.setValue("application/json",
                          forHTTPHeaderField: "Accept")
