@@ -11,11 +11,9 @@ struct Recipe: Decodable{
     
     let idMeal: String
     let strMeal: String
-    let strCategory: String
     let strArea: String
     let strInstructions:String
     let strMealThumb: String
-    let strYoutube: String
     let strIngredient1: String
     let strIngredient2: String
     let strIngredient3: String
@@ -36,37 +34,15 @@ struct Recipe: Decodable{
     let strIngredient18: String
     let strIngredient19: String
     let strIngredient20: String
-    let strMeasure1: String
-    let strMeasure2: String
-    let strMeasure3: String
-    let strMeasure4: String
-    let strMeasure5: String
-    let strMeasure6: String
-    let strMeasure7: String
-    let strMeasure8: String
-    let strMeasure9: String
-    let strMeasure10: String
-    let strMeasure11: String
-    let strMeasure12: String
-    let strMeasure13: String
-    let strMeasure14: String
-    let strMeasure15: String
-    let strMeasure16: String
-    let strMeasure17: String
-    let strMeasure18: String
-    let strMeasure19: String
-    let strMeasure20: String
     
 }
 
 
 let testMeal = Recipe(         idMeal:"52795",
                                strMeal:"Chicken Handi",
-                               strCategory:"Chicken",
                                strArea:"Indian",
                                strInstructions:"",
                                strMealThumb:"https://www.themealdb.com/images/media/meals/wyxwsp1486979827.jpg",
-                               strYoutube:"https://www.youtube.com/watch?v=IO0issT0Rmc",
                                strIngredient1:"Chicken",
                                strIngredient2:"Onion",
                                strIngredient3:"Tomatoes",
@@ -86,27 +62,7 @@ let testMeal = Recipe(         idMeal:"52795",
                                strIngredient17:"",
                                strIngredient18:"",
                                strIngredient19:"",
-                               strIngredient20:"",
-                               strMeasure1:"1.2 kg",
-                               strMeasure2:"5 thinly sliced",
-                               strMeasure3:"2 finely chopped",
-                               strMeasure4:"8 cloves chopped",
-                               strMeasure5:"1 tbsp",
-                               strMeasure6:"",
-                               strMeasure7:"2 tsp",
-                               strMeasure8:"3 tsp",
-                               strMeasure9:"1 tsp",
-                               strMeasure10:"1 tsp",
-                               strMeasure11:"2",
-                               strMeasure12:"1 cup",
-                               strMeasure13:"",
-                               strMeasure14:"3 tsp Dried",
-                               strMeasure15:"1 tsp",
-                               strMeasure16:"To taste",
-                               strMeasure17:"",
-                               strMeasure18:"",
-                               strMeasure19:"",
-                               strMeasure20:"")
+                               strIngredient20:"")
 
 struct SearchResult: Decodable {
     
