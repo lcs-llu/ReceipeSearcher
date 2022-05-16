@@ -47,7 +47,7 @@ struct DetailView: View {
                     Text("Ingredients")
                 })
             }
-            .navigationTitle("Recipe")
+            .navigationTitle(recipe.strMeal)
         }.onAppear {
             print(recipe)
         }
