@@ -19,11 +19,15 @@ struct LikedButtonView: View {
         Button(action: {
             addOrRemoveRecipeFromLiked()
         }, label: {
-            Image(systemName: inLiked == false ? "heart.circle" : "heart.circle.fill")
-                .resizable()
-                .frame(width: 40, height: 40)
-                .aspectRatio(contentMode: .fit)
-                .foregroundColor(Color("deepRed"))
+            HStack {
+                Spacer()
+                Image(systemName: inLiked == false ? "heart.circle" : "heart.circle.fill")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(Color.red)
+                Spacer()
+            }
         })
     }
     
