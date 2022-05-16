@@ -15,6 +15,8 @@ struct SearchView: View {
     
     @Binding var liked: [Recipe]
     
+    @Binding var history: [Recipe]
+    
     var body: some View {
         
         NavigationView {
@@ -24,10 +26,10 @@ struct SearchView: View {
                     
                     List(foundRecipes, id: \.idMeal) { currentRecipe in
                         NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: false, liked: $liked)) {
-                            ListItemView(recipe: currentRecipe)
+                            ListItemView(recipe: currentRecipe, history: $history)
                         }
                     }
-                    .searchable(text: $searchText)
+                    .searchable(text: $searchText, prompt: "Search recipes")
                     .onChange(of: searchText) { whatWasTyped in
                         Task {
                             await fetchResults()
@@ -104,7 +106,7 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(liked: .constant([testMeal]))
+        SearchView(liked: .constant([testMeal]), history: .constant([testMeal]))
     }
 }
 

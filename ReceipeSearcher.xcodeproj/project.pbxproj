@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A38D57C2832F11F007AFB8E /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A38D57B2832F11F007AFB8E /* HistoryModel.swift */; };
 		3A629B9F282B2C18005A3B89 /* ReceipeSearcherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A629B9E282B2C18005A3B89 /* ReceipeSearcherApp.swift */; };
 		3A629BA3282B2C1A005A3B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A629BA2282B2C1A005A3B89 /* Assets.xcassets */; };
 		3A629BA6282B2C1A005A3B89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A629BA5282B2C1A005A3B89 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A38D57B2832F11F007AFB8E /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		3A629B9B282B2C18005A3B89 /* ReceipeSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceipeSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A629B9E282B2C18005A3B89 /* ReceipeSearcherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeSearcherApp.swift; sourceTree = "<group>"; };
 		3A629BA2282B2C1A005A3B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				3A629BBF282D6AC7005A3B89 /* RecipeModel.swift */,
+				3A38D57B2832F11F007AFB8E /* HistoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				3A7315A5283054E000968578 /* RemoteImageView.swift in Sources */,
 				3A629BB8282D6124005A3B89 /* HistoryView.swift in Sources */,
 				3A629BAD282B3897005A3B89 /* SearchView.swift in Sources */,
+				3A38D57C2832F11F007AFB8E /* HistoryModel.swift in Sources */,
 				3A629BB4282D5F90005A3B89 /* LikedView.swift in Sources */,
 				3A629B9F282B2C18005A3B89 /* ReceipeSearcherApp.swift in Sources */,
 				3A629BC0282D6AC7005A3B89 /* RecipeModel.swift in Sources */,

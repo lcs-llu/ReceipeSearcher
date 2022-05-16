@@ -10,6 +10,7 @@ import SwiftUI
 struct LikedView: View {
     
     @Binding var liked: [Recipe]
+    @Binding var history: [Recipe]
     
     var body: some View {
         NavigationView {
@@ -27,7 +28,7 @@ struct LikedView: View {
                 } else {
                     List(liked, id:\.idMeal) {currentRecipe in
                         NavigationLink(destination: DetailView(recipe: currentRecipe, inLiked: true, liked: $liked)) {
-                            ListItemView(recipe: currentRecipe)
+                            ListItemView(recipe: currentRecipe, history: $history)
                         }
                     }
                 }
@@ -40,6 +41,6 @@ struct LikedView: View {
 
 struct LikedView_Previews: PreviewProvider {
     static var previews: some View {
-        LikedView(liked: .constant([testMeal]))
+        LikedView(liked: .constant([testMeal]), history: .constant([testMeal]))
     }
 }

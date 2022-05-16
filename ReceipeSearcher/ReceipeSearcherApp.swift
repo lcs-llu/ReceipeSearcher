@@ -11,22 +11,23 @@ import SwiftUI
 struct ReceipeSearcherApp: App {
     
     @State var liked: [Recipe] = []
+    @State var history: [Recipe] = []
     
     var body: some Scene {
         WindowGroup {
             TabView {
                 
-                SearchView(liked: $liked)
+                SearchView(liked: $liked, history: $history)
                     .tabItem {
                         Label("Search", systemImage: "magnifyingglass")
                     }
                 
-                LikedView(liked: $liked)
+                LikedView(liked: $liked, history: $history)
                     .tabItem {
                         Label("Liked",systemImage: "hand.thumbsup")
                     }
                 
-                HistoryView()
+                HistoryView(history: $history)
                     .tabItem {
                         Label("History",systemImage: "book")
                     }

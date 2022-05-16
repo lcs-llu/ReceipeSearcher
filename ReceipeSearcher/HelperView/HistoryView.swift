@@ -10,17 +10,23 @@ import SwiftUI
 
 
 struct HistoryView: View {
+    
+    @Binding var history: [Recipe]
+    
     var body: some View {
         NavigationView{
-            Text("You haven't searched any recipes yet")
-                .padding()
-                .navigationTitle("History")
+            List {
+                ForEach(history) {currentHistory in
+                    Text(currentHistory.strMeal)
+                }
+            }
+            .navigationTitle("History")
         }
     }
 }
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryView()
+        HistoryView(history: .constant([testMeal]))
     }
 }
