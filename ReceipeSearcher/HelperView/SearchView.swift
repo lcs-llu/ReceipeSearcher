@@ -77,13 +77,13 @@ struct SearchView: View {
             let (data, _) = try await urlSession.data(for: request)
             
             
-            print(String(data: data, encoding: .utf8)!)
+//            print(String(data: data, encoding: .utf8)!)
             
             
             let decodedSearchResult = try JSONDecoder().decode(SearchResult.self, from: data)
             
             
-            foundRecipes = decodedSearchResult.results
+            foundRecipes = decodedSearchResult.meals
             
         } catch {
             

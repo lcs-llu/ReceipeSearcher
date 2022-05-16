@@ -14,26 +14,26 @@ struct Recipe: Decodable{
     let strArea: String
     let strInstructions:String
     let strMealThumb: String
-    let strIngredient1: String
-    let strIngredient2: String
-    let strIngredient3: String
-    let strIngredient4: String
-    let strIngredient5: String
-    let strIngredient6: String
-    let strIngredient7: String
-    let strIngredient8: String
-    let strIngredient9: String
-    let strIngredient10: String
-    let strIngredient11: String
-    let strIngredient12: String
-    let strIngredient13: String
-    let strIngredient14: String
-    let strIngredient15: String
-    let strIngredient16: String
-    let strIngredient17: String
-    let strIngredient18: String
-    let strIngredient19: String
-    let strIngredient20: String
+    var strIngredient1: String?
+    var strIngredient2: String?
+    var strIngredient3: String?
+    var strIngredient4: String?
+    var strIngredient5: String?
+    var strIngredient6: String?
+    var strIngredient7: String?
+    var strIngredient8: String?
+    var strIngredient9: String?
+    var strIngredient10: String?
+    var strIngredient11: String?
+    var strIngredient12: String?
+    var strIngredient13: String?
+    var strIngredient14: String?
+    var strIngredient15: String?
+    var strIngredient16: String?
+    var strIngredient17: String?
+    var strIngredient18: String?
+    var strIngredient19: String?
+    var strIngredient20: String?
     
 }
 
@@ -66,6 +66,7 @@ let testMeal = Recipe(         idMeal:"52795",
 
 struct SearchResult: Decodable {
     
-    let results: [Recipe]
+    let meals: [Recipe]
     
+   
 }
